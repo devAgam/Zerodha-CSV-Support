@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Kite Zerodha CSV Search",
+  "version": "1.0",
+  "description": "Search stock symbols from CSV in kite.zerodha.com",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.zerodha.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
