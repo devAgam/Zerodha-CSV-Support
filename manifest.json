@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Kite Zerodha CSV Search",
+  "name": "Kite by Zerodha CSV Support",
   "version": "1.0",
-  "description": "Search stock symbols from CSV in kite.zerodha.com",
+  "description": "Add stock symbols from CSV in your Kite Watchlist",
   "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
